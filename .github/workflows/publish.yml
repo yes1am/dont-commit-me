@@ -1,0 +1,11 @@
+name: publish npm
+on: [tags]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        run: |
+        echo '${{ secrets.TOKEN }}'>.npmrc
+        npm publish --registry https://registry.npmjs.org
