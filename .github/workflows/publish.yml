@@ -13,4 +13,4 @@ jobs:
       - name: publish
         run: |
           echo '${{ secrets.TOKEN }}'>.npmrc
-          npm publish --registry https://registry.npmjs.org
+          npm publish

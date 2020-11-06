@@ -37,3 +37,11 @@ npm i
 node bin/dont-commit-me.js <sensitive word1>,<sensitive word2>,...
 ```
 
+## Publish
+
+```shell
+npm version major | minor | patch
+
+git push origin --tags
+```
+
