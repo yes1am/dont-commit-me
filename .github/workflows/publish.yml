@@ -1,5 +1,8 @@
 name: publish npm
-on: [tags]
+on: 
+  push:
+    tags:
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,5 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         run: |
-        echo '${{ secrets.TOKEN }}'>.npmrc
-        npm publish --registry https://registry.npmjs.org
+          echo '${{ secrets.TOKEN }}'>.npmrc
+          npm publish --registry https://registry.npmjs.org
