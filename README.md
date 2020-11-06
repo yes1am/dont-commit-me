@@ -6,7 +6,7 @@ Prevent from committing sensitive words
 ## Usage
 
 ```shell
-npm i --save-dev hooks dont-commit-me
+npm i --save-dev husky dont-commit-me
 ```
 
 add config to your package.json

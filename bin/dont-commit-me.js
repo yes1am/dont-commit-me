@@ -19,7 +19,7 @@ const SENSITIVE_WORDS = sensitiveWords.split(',');
 const root = process.cwd();
 
 // 默认忽略的文件
-const DEFAULT_IGNORES = ['.git'];
+const DEFAULT_IGNORES = ['.git', 'package.json'];
 
 // https://github.com/jonschlinkert/parse-gitignore/blob/master/index.js#L10-L14
 const parseGitignore = () => {
