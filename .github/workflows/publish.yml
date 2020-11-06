@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - name: publish
         run: |
           echo '${{ secrets.TOKEN }}'>.npmrc
           npm publish --registry https://registry.npmjs.org
