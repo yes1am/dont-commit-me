@@ -1,7 +1,7 @@
 # Don't Commit Me
 
 Prevent from committing sensitive words  
-*防止提交敏感信息*
+*防止提交敏感词*
 
 ## Usage
 
