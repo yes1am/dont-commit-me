@@ -42,6 +42,8 @@ node bin/dont-commit-me.js <sensitive word1>,<sensitive word2>,...
 ```shell
 npm version major | minor | patch
 
-git push origin --tags
+git push               // push code
+
+git push origin --tags // trigger CI & publish
 ```
 
